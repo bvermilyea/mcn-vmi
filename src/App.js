@@ -1,28 +1,20 @@
-import Directory from './components/directory/directory.component'
+import { Routes, Route } from 'react-router-dom'
+import Home from './routes/home/home.component'
+import Navigation from './routes/navigation/navigation.component'
+
+const Count = () => {
+  return <h1>I am the count component</h1>
+}
 
 const App = () => {
-  const categories = [
-    {
-      id: 1,
-      title: 'Sheet & Plate',
-      subtitle: 'Count Sheets & Plate',
-      imgUrl: 'images/Plates.png',
-    },
-    {
-      id: 2,
-      title: 'Parts',
-      subtitle: 'Count Parts',
-      imgUrl: 'images/Fabrication.jpg',
-    },
-    {
-      id: 3,
-      title: 'Count Results',
-      subtitle: 'Review Current Count',
-      imgUrl: 'images/list.png',
-    },
-  ]
-
-  return <Directory categories={categories} />
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="count" element={<Count />} />
+      </Route>
+    </Routes>
+  )
 }
 
 export default App
