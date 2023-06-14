@@ -3,6 +3,7 @@ import Home from './routes/home/home.component'
 import Navigation from './routes/navigation/navigation.component'
 import Authentication from './routes/authentication/authentication.component'
 import Count from './routes/count/count.component'
+import CountResults from './routes/results/results.component'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="count" element={<Count />} />
+        <Route path="results" element={<CountResults />} />
         <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>

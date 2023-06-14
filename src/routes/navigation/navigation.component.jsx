@@ -20,7 +20,13 @@ const Navigation = () => {
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/count">
-            Count
+            Sheets
+          </Link>
+          <Link className="nav-link" to="/count">
+            Parts
+          </Link>
+          <Link className="nav-link" to="/results">
+            Results
           </Link>
           {currentUser ? (
             <span className="nav-link" onClick={signOutAuthUser}>

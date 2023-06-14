@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { UserProvider } from './contexts/user.context'
 import { ItemProvider } from './contexts/item.context'
+import { CountProvider } from './contexts/count.context'
 
 import './index.scss'
 import reportWebVitals from './reportWebVitals'
@@ -15,7 +16,9 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <ItemProvider>
-          <App />
+          <CountProvider>
+            <App />
+          </CountProvider>
         </ItemProvider>
       </UserProvider>
     </BrowserRouter>

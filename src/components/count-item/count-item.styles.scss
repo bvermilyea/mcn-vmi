@@ -1,0 +1,22 @@
+.count-item-container {
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+  padding: 15px 0;
+  font-size: 15px;
+  align-items: center;
+
+  .item,
+  .quantity,
+  .date,
+  .sheets,
+  .location {
+    width: 18%;
+  }
+
+  .remove {
+    padding-left: 25px;
+    width: 10%;
+    cursor: pointer;
+  }
+}

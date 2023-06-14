@@ -8,18 +8,21 @@ const Home = () => {
       title: 'Sheet & Plate',
       subtitle: 'Count Sheets & Plate',
       imgUrl: 'images/Plates.png',
+      url: '/count/sheets',
     },
     {
       id: 2,
       title: 'Parts',
       subtitle: 'Count Parts',
       imgUrl: 'images/Fabrication.jpg',
+      url: '/count/parts',
     },
     {
       id: 3,
       title: 'Count Results',
       subtitle: 'Review Current Count',
       imgUrl: 'images/list.png',
+      url: '/results',
     },
   ]
 
